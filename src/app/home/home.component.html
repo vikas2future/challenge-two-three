@@ -1,0 +1,12 @@
+<div>
+  <input type='number' [(ngModel)]='version'  min='1' value={{version}}/>
+</div>
+<div>
+  <h2 [style.color]='color'>Hello World {{ version | number:'1.1-2' }}</h2>
+</div>
+<div>
+  <button class='btn btn-primary'
+    (click)='toggleColor()'>Change Color
+  </button>
+</div>
+
